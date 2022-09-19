@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: 'Oxygen', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--sans);
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--font-size);
+}
+
+/* h1, h2, h3 {
+    margin: 0;     
+} */
+
+/* Header */
+a {
+    color: var(--magenta);
+}
+
+a:hover {
+    color: var(--hotmag);
+    text-decoration: none;
+}
+
+/* Intro */
+
+#intro {
+    padding: 10rem;
+}
+
+#intro p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#intro .name {
+    font-family: var(--mono);
+}
+
+.name span {
+    font-family: var(--sans);
+    font-size: 4rem;
+    color: var(--aqua);
+    display: block;
+}
+
+#intro h2 {
+    font-size: 4rem;
+}
+
+#intro h2 span:hover {
+    color: var(--magenta);
+}
+
+/* Contact */
+#contact {
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--plum);
+}
+
+#contact p {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 2rem;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+}
+
+/* Navbar */
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav [class*="fa-"] {
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+    font-size: 100%;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+    color: var(--magenta);
+}
+
+.button {
+    font-family: var(--mono);
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: var(--hotmag);
+    color: var(--white);
+    
+}
+
+/* Footer */
+footer {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+footer h2 span:hover {
+    color: var(--aqua);
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    font-size: 150%;
+    color: var(--magenta);
+}
+
+footer [class*="fa-"]:hover {
+    color: var(--hotmag);   
+}
+
+footer p {
+    font-size: 50%;
+}
+
+
+/* Media Quries */
+@media (min-width: 850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 890px) {
+    #intro {
+        text-align: center;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 630px) {
+    #intro {
+        padding: 5rem;
+    }
+    #intro h2 {
+         font-size: 2rem;
+    }
+    #intro p {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    #intro p.name {
+        font-size: 1rem;
+    }
+    #intro p.name span {
+        font-size: 3rem;
+    }
+}
