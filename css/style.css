@@ -206,7 +206,7 @@ footer p {
 
 @media (max-width: 630px) {
     #intro {
-        padding: 5rem;
+        padding: 0 5rem 5rem 5rem;
     }
     #intro h2 {
          font-size: 2rem;
